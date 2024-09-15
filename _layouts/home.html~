@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+  {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">Notre actualit&eacute</h2>
+      {% for post in paginator.posts %}
+    <div class="flex-container--column post-sumup">
+    <div class="left post-header">
+      {%- assign date_format = site.minima.date_format | default: "%d/%m/%Y" -%}
+      <b>{{ post.date | date: date_format }}</b>
+      - <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    </div>
+    <div class="post-content">
+      {{ post.content }}
+    </div>
+    </div>
+      {%- endfor -%}
+
+  {%- endif -%}
+
+{% assign max_p = 10 %}
+{% if paginator.previous_page and site.posts.size > max_p %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Page précédente</a>
+{% endif %}
+{% if  paginator.previous_page == false and site.posts.size > max_p %}
+    <span class="previous">Page précédente</span>
+  {% endif %}
+{% if  site.posts.size > max_p %}
+  <span class="page_number">Page: {{ paginator.page }} sur {{ paginator.total_pages }}</span>
+{% endif %}
+  {% if paginator.next_page and  site.posts.size > max_p  %}
+    <a href="{{ paginator.next_page_path }}" class="next">Page suivante</a>
+  {% endif %}
+{% if  paginator.next_page == false and  site.posts.size > max_p %}
+    <span class="next ">Page suivante</span>
+    {% endif %}
+
+
+    <p class="feed-subscribe"><svg class="svg-icon orange"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg><a href="{{ "/feed.xml" | relative_url }}">Subscribe</a></p>
+
+
+</div>

@@ -1,0 +1,71 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+//@import "bootstrap";
+@import "minima";
+
+.tabs-menu-text-details {
+  font-family: caveat;
+  font-size: 2rem;
+  font-style: italic;
+  color: white;
+  border-radius: 0 20px 20px 20px;
+  background-color: #9f3863
+}
+
+.tabs-menu {
+  border-bottom: none;
+  background-color: white;
+}
+
+.logo {
+  background-color: white;
+}
+
+.content {
+  background-color: white;
+  padding: 20px;
+}
+
+.tabs-menu-link:focus,
+.tabs-menu-link:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.post-sumup {
+  border: 3px solid black;
+  border-radius: 0 20px 20px 20px;
+  margin-bottom: 30px;
+}
+
+.post-header {
+  background-color: #6cafb7;
+  border-radius: 0px 20px 0px 0px;
+  a {text-decoration: none; color: black}
+}
+
+.post-content {
+  border-radius: 0px 0px 20px 20px;
+  img {max-height:400px; display: block; margin-left:auto; margin-right: auto; width: auto;}
+  font-family: caveat;
+  font-size: 2.5rem;
+  font-style: italic;
+
+}
+
+.footer_img {
+  img {max-height:180px; display: block; margin-left:auto; margin-right: auto; width: auto; border-radius: 20px 20px 20px 20px; border-style: solid}
+  
+}
+
+.spectacle-passe {
+  img {display: block; border-style: solid}
+}
+
+.guide {
+  text-align: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
