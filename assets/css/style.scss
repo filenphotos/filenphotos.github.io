@@ -5,11 +5,11 @@
 @import "minima";
 
 .tabs-menu-text-details {
-  font-family: caveat;
+  font-family: caveat brush;
   font-size: 2rem;
   font-style: italic;
   color: white;
-  border-radius: 0 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
   background-color: #9f3863
 }
 
@@ -29,7 +29,7 @@
 
 .tabs-menu-link:focus,
 .tabs-menu-link:hover {
-  color: red;
+  color: #acacac;
   text-decoration: none;
 }
 
@@ -42,14 +42,16 @@
 .post-header {
   background-color: #6cafb7;
   border-radius: 0px 20px 0px 0px;
-  a {text-decoration: none; color: black}
+  font-family:caveat;
+  font-size:2rem;
+  a {text-decoration: none; color: black; font-family:caveat; font-size:2.5rem}
 }
 
 .post-content {
   border-radius: 0px 0px 20px 20px;
   img {max-height:400px; display: block; margin-left:auto; margin-right: auto; width: auto;}
   font-family: caveat;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-style: italic;
 
 }
