@@ -1,6 +1,6 @@
 ---
 layout: page_notitle
-title: Commandes Personnalisés
+title: Commandes Personnalisées
 ---
 
 Kits personnalisés.
