@@ -1,6 +1,7 @@
 ---
 layout: page_notitle
 title: Ateliers
+permalink: /ateliers/
 ---
 
 Notre créatrice brodeuse se fera un plaisir de vous faire vivre un moment unique lors

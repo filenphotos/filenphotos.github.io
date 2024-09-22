@@ -1,7 +1,7 @@
 ---
 layout: page_notitle
 title: Commandes Personnalisées
-permalink: /commande.md/
+permalink: /commandes/
 ---
 
 Suivant vos envies et vos besoins nous pouvons réaliser pour vous des commandes
