@@ -61,8 +61,24 @@
   
 }
 
+.header_img {
+  img {height:100px; display: block; margin-left:auto; margin-right: auto; width: auto;}
+  
+}
+
+.header_background {
+    background-image: url("../../images/jumbotron_bkg.jpg");
+    background-repeat: repeat-x;
+}
+
 .spectacle-passe {
   img {display: block; border-style: solid}
+}
+
+.kits {
+    img {display: block; border-style: solid}
+      font-family: caveat;
+  font-size: 2rem;
 }
 
 .guide {
@@ -71,3 +87,21 @@
   margin-bottom: 10%;
 }
 
+.burger-button > * {
+  display: inline-flex;
+  vertical-align: top;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 2.6rem;
+  width: 2.6rem;
+  background-image: linear-gradient(#333, #333);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-size: 100% 5px;
+  transition: .25s;
+    transition-property: all;
+  transition-property: transform, background;
+  will-change: transform, background;
+}

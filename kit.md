@@ -1,10 +1,6 @@
 ---
-layout: page_notitle
-title: Kits
+layout: kit
+title: Nos Kits
+permalink: /kit/
 ---
 
-En construction.
-
-Nos kits à venir.
-
-![](/uploads/pygmaplan3.jpg)
