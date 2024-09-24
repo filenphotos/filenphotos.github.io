@@ -13,6 +13,22 @@
   background-color: #9f3863
 }
 
+.filenphoto_menu {
+    display: flex;
+    justify-content: space-between; /* Pour séparer le texte à gauche et le burger à droite */
+    align-items: center; /* Aligne verticalement les éléments */
+}
+
+.filenphoto_menu_text {
+  font-family: caveat brush;
+  font-size: 2.6rem;
+  color: #9f3863;
+}
+
+.nav-button {
+  color: #9f3863;
+}
+
 .tabs-menu {
   border-bottom: none;
   background-color: white;
@@ -52,17 +68,14 @@
   img {max-height:400px; display: block; margin-left:auto; margin-right: auto; width: auto;}
   font-family: aria;
   font-size: 2rem;
-
 }
 
 .footer_img {
-  img {max-height:180px; display: block; margin-left:auto; margin-right: auto; width: auto; border-radius: 20px 20px 20px 20px; border-style: solid}
-  
+  img {max-height:180px; display: block; margin-left:auto; margin-right: auto; width: auto; border-radius: 20px 20px 20px 20px}
 }
 
 .header_img {
-  img {height:100px; display: block; margin-left:auto; margin-right: auto; width: auto;}
-  
+    img {max-height:180px; display: block; margin-left:auto; margin-right: auto; width: auto; border-radius: 20px 20px 20px 20px; border-style: none}
 }
 
 .header_background {
@@ -100,7 +113,30 @@
   background-origin: content-box;
   background-size: 100% 5px;
   transition: .25s;
-    transition-property: all;
+  transition-property: all;
   transition-property: transform, background;
   will-change: transform, background;
 }
+
+
+
+
+
+.menubar {
+    display: none;
+}
+
+@Media (max-width: 768px)  {
+  nav.tabs-menu {
+    display: none;
+  }
+
+  nav.tabs-menu.is-opened {
+    display: block;
+  }
+  
+ div.menubar {
+    display: block;
+  }
+}
+

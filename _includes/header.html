@@ -1,5 +1,29 @@
 <header>
-  <div class="tabs js-tabs txtcenter">
+
+  <section class="grid-4-small-1">
+	<div></div>
+	<div class="header_img col-2">
+        <p><img src="{{ "images/banniere.png" | relative_url }}"></p>
+	</div>
+  </section>
+ 
+
+
+   <div class="menubar">
+   <section class="grid-4-small-1">
+    <div></div>
+    <div class="filenphoto_menu">
+     <div class="filenphoto_menu_text"><p>Filenphotos</p></div>
+     <div class="js-tabs">
+       <button class="nav-button" type="button" role="button" aria-label="open/close navigation"><i></i></button>
+     </div>
+    </div>
+
+   </section>
+   </div>
+
+  <div class="tabs js-tabs txtcenter" style="display:block">
+    <nav>
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
@@ -14,7 +38,44 @@
         </div>
       </nav>
   </div>
-  <div class="flex-container logo" style="height: 200px;" >
-    <span class="item-center"><a href="{{ "/" | relative_url }}"><img width="200" heigth="150" src="{{ "/images/logo.svg" | relative_url }}"></a></span>
-  </div>
+
+ <p></p>
+
+
+
+
+<script>
+    
+/**!
+Navigation Button Toggle class
+*/
+(function() {
+
+// old browser or not ?
+if ( !('querySelector' in document && 'addEventListener' in window) ) {
+return;
+}
+window.document.documentElement.className += ' js-enabled';
+
+function toggleNav() {
+
+// Define targets by their class or id
+var button = document.querySelector('.nav-button');
+var target = document.querySelector('.tabs-menu');
+
+// click-touch event
+if ( button ) {
+  button.addEventListener('click',
+  function (e) {
+      button.classList.toggle('is-active');
+      target.classList.toggle('is-opened');
+      e.preventDefault();
+  }, false );
+}
+} // end toggleNav()
+
+toggleNav();
+}());
+</script>
+
 </header>
