@@ -19,10 +19,18 @@
     align-items: center; /* Aligne verticalement les éléments */
 }
 
+
+
+.filenphoto_menu_button {
+    margin-left: auto;
+}
+
 .filenphoto_menu_text {
   font-family: caveat brush;
-  font-size: 2.6rem;
+  font-size: 4rem;
   color: #9f3863;
+  text-align: center;
+  flex-grow: 1;
 }
 
 .nav-button {
