@@ -1,0 +1,26 @@
+name: Generate Daily API Secret
+
+# This job runs every day at midnight UTC
+on:
+  schedule:
+    - cron: "0 * * * *"  # Runs daily at 00:00 UTC
+
+jobs:
+  generate-secret:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Generate a new API secret
+      id: generate_secret
+      run: echo "secret=$(openssl rand -base64 32)" >> $GITHUB_ENV
+
+    - name: Update Flask API with the new secret
+      run: |
+        echo "${{ env.secret }}"
+
+    - name: Save secret in GitHub repository secrets (Optional)
+      uses: actions/github-script@v3
+      with:
+        script: |
+          const secret = process.env.secret;
+          github.actions.setSecret(secret);
