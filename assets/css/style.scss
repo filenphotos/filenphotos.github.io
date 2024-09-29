@@ -59,12 +59,13 @@
 
 .post-sumup {
   border: 3px solid black;
+  background-color: #6cafb7;
   border-radius: 0 20px 20px 20px;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
 }
 
 .post-header {
-  background-color: #6cafb7;
+  
   border-radius: 0px 20px 0px 0px;
   font-family:caveat;
   font-size:2rem;
@@ -72,7 +73,8 @@
 }
 
 .post-content {
-  border-radius: 0px 0px 20px 20px;
+    border-radius: 0px 0px 0px 0px;
+      background-color: white;
   img {max-height:400px; display: block; margin-left:auto; margin-right: auto; width: auto;}
   font-family: aria;
   font-size: 2rem;
@@ -83,7 +85,7 @@
 }
 
 .header_img {
-    img {max-height:180px; display: block; margin-left:auto; margin-right: auto; width: auto; border-radius: 20px 20px 20px 20px; border-style: none}
+    img {max-height:250px; display: block; margin-left:auto; margin-right: auto; width: auto; border-radius: 20px 20px 20px 20px; border-style: none}
 }
 
 .header_background {
